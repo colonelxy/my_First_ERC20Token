@@ -20,7 +20,7 @@ contract RetroToken {  //the 'address' used in all these functions is the  ETH p
 
     // Set the total amount of tokens at contract creation time and initially assign all of them to the “contract owner” i.e. the account that deployed the smart contract:
 
-    constructor(uint256 total) public {
+    constructor() RTR(uint256 total) public {
         totalSupply = total;
         balances[msg.sender] = totalSupply;
     }
